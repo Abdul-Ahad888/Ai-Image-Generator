@@ -1,0 +1,808 @@
+/* Color Codes */
+.nftstore-lab-primary-text {
+    color: #B5FB02;
+}
+
+.nftstore-lab-secondary-text {
+    color: #00DBB6;
+}
+
+.nftstore-lab-alpha-text {
+    color: #00C1FF;
+}
+
+.nftstore-lab-bnb-text {
+    color: #F5BC00;
+}
+
+.nftstore-lab-light-text {
+    color: #7C876E;
+}
+
+.nftstore-lab-danger-text {
+    color: #FF7063;
+}
+
+.nftstore-lab-base-bg {
+    color: #141612;
+}
+
+/* Font Sizes */
+.nftstore-lab-fs-small {
+    font-size: 12px;
+}
+
+/* Body */
+body {
+    background-color: #0A0B09;
+    color: white;
+}
+
+
+/* Navigation Bar */
+.nftstore-lab-nav {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #141612;
+    color: white;
+    z-index: 99999;
+}
+
+.nftstore-lab-chevron-small {
+    font-size: 10px;
+}
+
+.nftstore-lab-nav-toggler {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: inline-block;
+    text-align: end;
+    border: none;
+}
+
+.nftstore-lab-nav-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nftstore-lab-nav-search {
+    width: 350px;
+}
+
+.nftstore-lab-nav-search input {
+    color: white;
+}
+
+.nftstore-lab-nav-search input::placeholder {
+    color: #9b9b9b;
+}
+
+.nftstore-lab-nav-search span,
+.nftstore-lab-nav-search input {
+    border: none;
+    background-color: #1F221C;
+    border-radius: 0;
+}
+
+.nftstore-lab-nav-search input:focus {
+    outline: none;
+    background-color: #1F221C;
+    box-shadow: 0 0 0 .05rem #B5FB02;
+    color: #fff;
+}
+
+.nftstore-lab-nav-search span i {
+    color: white;
+}
+
+.nftstore-lab-language-selector {
+    margin: 0px 10px;
+}
+
+.nftstore-lab-notification {
+    margin: 0px 10px;
+}
+
+.nftstore-lab-notification button {
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.nftstore-lab-profile {
+    margin: 0px 10px;
+    font-size: 24px;
+}
+
+.nftstore-lab-nft-button {
+    background-color: #B5FB02;
+    font-weight: 700;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 50px;
+    margin: 0px 10px;
+    color: black;
+    transition: 0.2s all ease;
+}
+
+.nftstore-lab-nft-button:hover {
+    background-color: #8ac000;
+}
+
+.nftstore-lab-bnb-button {
+    background-color: #1F221C;
+    color: white;
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 0.2s all ease;
+}
+
+.nftstore-lab-bnb-button:hover {
+    background-color: #373a35;
+}
+
+.nftstore-lab-bnb-button img {
+    position: relative;
+    bottom: 2px;
+    margin-right: 6px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .nftstore-lab-language-selector {
+        margin: 0px 4px;
+        font-size: 18px;
+    }
+
+    .nftstore-lab-notification {
+        margin: 0px 4px;
+        font-size: 18px;
+    }
+
+    .nftstore-lab-profile {
+        margin: 0px 4px;
+    }
+
+    .nftstore-lab-nft-button {
+        padding: 8px 20px;
+    }
+
+    .nftstore-lab-bnb-button {
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nftstore-lab-profile {
+        position: absolute;
+        top: 23px;
+        right: 70px;
+    }
+    .nftstore-lab-language-selector {
+        position: absolute;
+        top: 25px;
+        right: 138px;
+    }
+    .nftstore-lab-notification {
+        position: absolute;
+        top: 12px;
+        right: 95px;
+    }
+    .nftstore-lab-notification button {
+        font-size: 22px;
+    }
+    .nftstore-lab-nav-search{
+        width: 100%;
+        display: block;
+    }
+    .nftstore-lab-nft-button{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .nftstore-lab-bnb-button{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .nftstore-lab-nav-dropdown{
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Sec-1 */
+
+.nftstore-lab-image-options img {
+    width: 70px;
+}
+
+.nftstore-lab-image-options button {
+    padding: 3px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.nav-link.active {
+    background-color: transparent !important;
+    border: 1px solid #B5FB02;
+}
+
+.nftstore-lab-image-previewer img {
+    width: 100%;
+}
+
+/* Bid */
+.nftstore-lab-bidding-box {
+    background-color: #141612;
+    padding: 30px;
+    color: white;
+}
+
+.nftstore-lab-bidding-box p,
+.nftstore-lab-bidding-box small {
+    color: #7C876E;
+}
+
+.nftstore-lab-bid-button {
+    width: 100%;
+    background-color: #B5FB02;
+    color: black;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    margin-top: 30px;
+    transition: 0.2s ease all;
+}
+
+.nftstore-lab-bid-button:hover {
+    background-color: #8ac000;
+}
+
+/* Image Description */
+.nftstore-lab-showcase-image {
+    width: 60px;
+}
+
+.nftstore-lab-showcase-text {
+    position: relative;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.nftstore-lab-showcase-text small {
+    color: #373a35;
+    font-weight: 600;
+}
+
+.nftstore-lab-item-group {
+    color: #7C876E;
+    margin-top: 36px;
+}
+
+.nftstore-lab-image-description-tabs {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #141612;
+    padding: 10px 20px;
+    height: 600px;
+}
+
+.nftstore-lab-image-description-tabs i {
+    transform: rotate(-45deg);
+    color: white;
+}
+
+.nftstore-lab-tabs li {
+    background-color: #141612;
+    text-align: center;
+}
+
+.nftstore-lab-tabs button {
+    width: 100px;
+    color: white !important;
+    border-radius: 0px !important;
+}
+
+.nftstore-lab-tabs .nav-link.active {
+    background-color: white !important;
+    color: #141612;
+    font-weight: 700;
+    border: none;
+}
+
+.nftstore-lab-tabs .nav-link.active {
+    background-color: white !important;
+    color: #141612 !important;
+    font-weight: 700;
+    border: none;
+}
+
+.nftstore-lab-tabs .nav-link.disabled {
+    color: #373a35 !important;
+}
+
+
+/* Section 2 */
+
+.nftstore-lab-activities-selector {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.nftstore-lab-activities-selector select {
+    width: 230px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #1F221C;
+    color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.nftstore-lab-activities-selector select:focus {
+    border: none;
+    outline: none;
+}
+
+.nftstore-lab-activities-selector-dropdown-arrow {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #fff;
+    font-size: 10px;
+}
+
+/* Activities Tables */
+.nftstore-lab-activities-container {
+    padding: 20px;
+    background-color: #141612;
+    overflow-x: auto;
+}
+
+/* Table Styles */
+.nftstore-lab-activities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nftstore-lab-activities-table thead {
+    text-align: left;
+    font-size: 14px;
+}
+
+.nftstore-lab-activities-table thead th {
+    padding: 12px 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #1d1d1d;
+    color: #7C876E;
+}
+
+.nftstore-lab-activities-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nftstore-lab-activities-table tbody tr:hover {
+    background-color: #1c1f1a;
+}
+
+.nftstore-lab-activities-table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+/* Item Column */
+.nftstore-lab-activities-item {
+    display: flex;
+    align-items: center;
+}
+
+.nftstore-lab-activities-item-img {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    margin-right: 12px;
+}
+
+.nftstore-lab-activities-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nftstore-lab-activities-item-info>span>img {
+    position: relative;
+    bottom: 1px;
+    margin-left: 2px;
+    width: 12px !important;
+}
+
+.nftstore-lab-activities-item-name {
+    font-weight: 700 !important;
+    color: white !important;
+}
+
+.nftstore-lab-activities-table tbody td span {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.nftstore-lab-activities-table tbody td i {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 8px;
+}
+
+.nftstore-lab-activities-arrow-transform i {
+    transform: rotate(-45deg);
+    margin-top: 8px;
+    color: white !important;
+}
+
+/* Pagination */
+.nftstore-lab-pagination span,
+.nftstore-lab-pagination a {
+    margin: 10px;
+    border-radius: 50px !important;
+    background-color: transparent;
+}
+
+.nftstore-lab-pagination .page-link {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+    color: white;
+}
+
+.nftstore-lab-pagination .page-link:hover {
+    background-color: #B5FB02;
+    cursor: pointer;
+    color: black;
+}
+
+.nftstore-lab-pagination .page-link.active {
+    background-color: transparent;
+    border: 1px solid #B5FB02;
+    color: #B5FB02;
+}
+
+.nftstore-lab-pagination .page-link.disabled {
+    color: #333;
+}
+
+.nftstore-lab-pagination .page-link:focus {
+    box-shadow: 0px 0px 0.4rem #B5FB02;
+}
+
+
+/* Section 3 */
+
+.nftstore-lab-card-description-box {
+    background-color: #141612;
+    padding: 20px;
+}
+
+.nftstore-lab-card-title-head {
+    border-bottom: 1px solid #2A2D25;
+    padding-bottom: 10px;
+}
+
+.nftstore-lab-card-title-head img {
+    position: relative;
+    width: 16px;
+    bottom: 2px;
+    left: 2px;
+}
+
+.nftstore-lab-card {
+    margin-top: 30px;
+}
+
+.nftstore-lab-card-info {
+    margin-top: 15px;
+}
+
+.nftstore-lab-card-info small {
+    font-size: 0.7rem;
+}
+
+.nftstore-lab-card-info p {
+    font-weight: 700;
+}
+
+/* View More Button */
+.nftstore-lab-view-more-btn button {
+    margin-top: 60px;
+    padding: 12px 40px;
+    border: 1px solid #B5FB02;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #B5FB02;
+    font-weight: 700;
+    transition: 0.2s ease-out all;
+}
+
+.nftstore-lab-view-more-btn button:hover {
+    background-color: #B5FB02;
+    color: black;
+}
+
+/* Section 5 */
+.nftstore-lab-updates {
+    margin-top: 50px;
+    height: 45vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141612;
+}
+
+.nftstore-lab-updates input {
+    margin-top: 20px;
+    display: block;
+    width: 540px;
+    padding: 16px 20px;
+    border: none;
+    background-color: #1F221C;
+    color: #575f4e;
+}
+
+@media screen and (max-width:720px) {
+    .nftstore-lab-updates input {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .nftstore-lab-updates input {
+        width: 320px !important;
+    }
+}
+
+.nftstore-lab-updates input:focus {
+    outline: none;
+    border: none;
+    color: #7C876E;
+}
+
+.nftstore-lab-updates input::placeholder {
+    color: #7C876E;
+    font-size: 14px;
+}
+
+.nftstore-lab-updates button {
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+
+/* Transaction Success Box */
+
+.nftstore-lab-transaction-box {
+    /*  */
+    display: none;
+    /*  */
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0A0B09;
+    padding: 20px;
+    width: 440px;
+    border-radius: 10px;
+}
+
+.nftstore-lab-transaction-box-head>button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.nftstore-lab-transaction-box-head>button>i {
+    font-size: 20px;
+}
+
+.nftstore-lab-transaction-middle-box {
+    background-color: #141612;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.nftstore-lab-transaction-middle-box-go-button {
+    transform: rotate(-45deg);
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.nftstore-lab-transaction-middle-box-divider {
+    width: 94%;
+    margin: auto;
+    border-bottom: 1px solid #1F221C;
+    margin-bottom: 15px;
+}
+
+.nftstore-lab-transaction-box-button {
+    background-color: #B5FB02;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 700;
+    transition: 0.2s ease all;
+}
+
+.nftstore-lab-transaction-box-button:hover {
+    background-color: #8ac000;
+}
+
+
+/* Pop Up Bidding Box */
+.nftstore-lab-pop-up-bid-box {
+    /*  */
+    display: none;
+    /*  */
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0A0B09;
+    padding: 20px;
+    width: 440px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 468px) {
+
+    .nftstore-lab-pop-up-bid-box,
+    .nftstore-lab-transaction-box {
+        width: 100%;
+    }
+}
+
+.nftstore-lab-pop-up-bid-box-head button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.nftstore-lab-pop-up-image-bid-box img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    border-radius: 20px !important;
+}
+
+.nftstore-lab-pop-up-middle-bid-box {
+    background-color: #141612;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.nftstore-lab-bid-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nftstore-lab-pop-up-middle-box-input {
+    position: relative;
+}
+
+.nftstore-lab-pop-up-middle-bid-box input {
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #1F221C;
+    padding: 12px 12px;
+    color: #fff;
+}
+
+.nftstore-lab-pop-up-middle-bid-box input:focus {
+    border: 1px solid #B5FB02;
+    outline: none;
+    color: #7C876E;
+}
+
+.nftstore-lab-pop-up-middle-bid-box input::placeholder {
+    color: #575f4e;
+    font-size: 14px;
+}
+
+.nftstore-lab-pop-up-middle-box-input-placeholder {
+    position: absolute;
+    top: 25%;
+    right: 12px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nftstore-lab-pop-up-middle-box-input-placeholder img {
+    width: 18px;
+    position: relative;
+    bottom: 2px;
+    right: 4px;
+}
+
+.nftstore-lab-pop-up-bid-box-button {
+    background-color: #B5FB02;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 700;
+    transition: 0.2s ease all;
+}
+
+.nftstore-lab-pop-up-bid-box-button:hover {
+    background-color: #8ac000;
+}
+
+
+
+/* Footer */
+
+.nftstore-lab-footer-links {
+    margin-top: 60px;
+}
+
+.nftstore-lab-footer {
+    margin-top: 90px;
+}
+
+.nftstore-lab-footer ul {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.nftstore-lab-footer li {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.nftstore-lab-footer a {
+    text-decoration: none;
+    color: #575f4e;
+}
+
+.nftstore-lab-bottom-footer {
+    margin-top: 40px;
+    border-top: 1px solid #2A2D25;
+    padding-top: 25px;
+    color: #575f4e;
+}

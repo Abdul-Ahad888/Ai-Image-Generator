@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nftstore-lab-nav navbar-expand-xl">
+        <div class="container-fluid">
+            <div class="row align-items-center w-100">
+                <!-- Logo Section -->
+                <div class="col-12 col-xl-1">
+                    <a class="" href="#">
+                        <img class="img-fluid" src="./assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!-- Toggle Button for Collapsing Navbar -->
+                <button class="navbar navbar-toggler nftstore-lab-nav-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse col-12 col-xl-11" id="navbarContent">
+                    <div class="row align-items-center w-100">
+                        <!-- Dropdowns and Search -->
+                        <div class="col-12 col-xl-7">
+                            <div class="d-block d-xl-flex align-items-center justify-content-between">
+                                <ul class="navbar-nav d-flex flex-row me-3">
+                                    <!-- Dropdown 1 -->
+                                    <li class="nftstore-lab-nav-dropdown nav-item dropdown me-xl-3 me-xxl-4">
+                                        <a class="nav-link" href="#" id="marketplaceDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">Marketplace <i
+                                                class="fa-solid fa-chevron-down ms-1 nftstore-lab-chevron-small"></i></a>
+                                        <ul class="dropdown-menu" aria-labelledby="marketplaceDropdown">
+                                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Dropdown 2 -->
+                                    <li class="nftstore-lab-nav-dropdown nav-item dropdown">
+                                        <a class="nav-link" href="#" id="resourcesDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">Resources <i
+                                                class="fa-solid fa-chevron-down ms-1 nftstore-lab-chevron-small"></i></a>
+                                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- Search Bar -->
+                                <form class="d-flex nftstore-lab-nav-search">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <input class="form-control" type="search" placeholder="Collection, item or user"
+                                            aria-label="Search">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- Buttons and Icons -->
+                        <div class="col-12 col-xl-5">
+                            <div class="d-flex align-items-center justify-content-start justify-content-xl-end">
+                                <!-- Language Icon -->
+                                <i class="fa fa-globe nftstore-lab-language-selector"></i>
+                                <!-- Notification Dropdown -->
+                                <div class="dropdown nftstore-lab-notification">
+                                    <button class="btn" type="button" id="walletDropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fas fa-bell"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Bnb Button -->
+                                <button class="nftstore-lab-bnb-button"><img src="./assets/coin.png" class="img-fluid"
+                                        alt="">Bnb Chain</button>
+                                <!-- NFT Button -->
+                                <button class="nftstore-lab-nft-button">Create NFT</button>
+
+                                <!-- User Profile Icon -->
+                                <i class="fa fa-user-circle nftstore-lab-profile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-5">
+
+                    <!-- Image Previewer -->
+                    <div class="tab-content nftstore-lab-image-previewer" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                            aria-labelledby="pills-1-tab" tabindex="0"><img src="./assets/image.png" alt=""></div>
+                        <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab"
+                            tabindex="0"><img src="./assets/image.png" alt=""></div>
+                        <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab"
+                            tabindex="0"><img src="./assets/image.png" alt=""></div>
+                        <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab"
+                            tabindex="0"><img src="./assets/image.png" alt=""></div>
+                        <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab"
+                            tabindex="0"><img src="./assets/image.png" alt=""></div>
+                    </div>
+
+                    <ul class="nav nav-pills nftstore-lab-image-options mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                                aria-selected="true"><img src="./assets/image.png" alt=""></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                                type="button" role="tab" aria-controls="pills-2" aria-selected="false"><img
+                                    src="./assets/image.png" alt=""></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
+                                type="button" role="tab" aria-controls="pills-3" aria-selected="false"><img
+                                    src="./assets/image.png" alt=""></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
+                                type="button" role="tab" aria-controls="pills-4" aria-selected="false"><img
+                                    src="./assets/image.png" alt=""></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5"
+                                type="button" role="tab" aria-controls="pills-5" aria-selected="false"><img
+                                    src="./assets/image.png" alt=""></button>
+                        </li>
+                    </ul>
+
+                    <!-- Bidding Box -->
+                    <div class="mt-4 nftstore-lab-bidding-box">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div>
+                                    <p>Price</p>
+                                    <h4>1.12 BUSD</h4>
+                                    <small>$ 336.86</small>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                                <p>Auction Ends In</p>
+                                <table class="w-100">
+                                    <tr>
+                                        <td class="hours">
+                                            <h4>00</h4>
+                                            <small>hrs</small>
+                                        </td>
+                                        <td class="mins">
+                                            <h4>24</h4>
+                                            <small>mins</small>
+                                        </td>
+                                        <td class="secs">
+                                            <h4>26</h4>
+                                            <small>secs</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <button class="nftstore-lab-bid-button">Bid</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-7">
+
+                    <!-- Image Description -->
+                    <div class="nftstore-lab-image-description mt-4 mt-lg-0 ms-0 ms-lg-5">
+                        <div>
+                            <h1>Giraffe</h1>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-12 col-lg-5">
+                                <div class="d-flex align-items-center my-2">
+                                    <div><img class="nftstore-lab-showcase-image" src="./assets/profile-image.png"
+                                            alt=""></div>
+                                    <div class="nftstore-lab-showcase-text">
+                                        <small>Collection</small>
+                                        <h6>Plato <img src="./assets/verified.png" class="" alt=""> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="d-flex align-items-center my-2">
+                                    <div><img class="nftstore-lab-showcase-image" src="./assets/profile-image.png"
+                                            alt=""></div>
+                                    <div class="nftstore-lab-showcase-text">
+                                        <small>Owner</small>
+                                        <h6>0xhg34...nGj2</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <div class="position-relative">
+                                    <div class="nftstore-lab-item-group">
+                                        <img src="./assets/itemGroup.png" alt="">
+                                        <small>5 items</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nftstore-lab-light-text">
+                            <p>Breathing Space joyfully brings the unique blend of DeFi, Collect-to-Earn and
+                                Play-to-Earn Abstract is known for to the Neo N3 ecosystem: the most feature-complete
+                                blockchain platform for building decentralized applications for the smart economy of
+                                tomorrow.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 ms-0 ms-lg-5">
+                        <ul class="nav nav-pills nftstore-lab-tabs mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Items</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link disabled" id="pills-disabled-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-disabled" type="button" role="tab"
+                                    aria-controls="pills-disabled" aria-selected="false" disabled>Offers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Bids</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Info</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content nftstore-lab-image-description-tabs d-flex flex-column"
+                            id="pills-tabContent">
+                            <div class="tab-pane fade show active flex-grow-1" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <!-- Row 1 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div><img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt=""></div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small>Plato</small>
+                                                <h6>Giraffe #100024768173</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mt-4 mx-0 mx-lg-2 text-end">
+                                            <button class="bg-transparent border-0">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 2 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div><img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt=""></div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small>Plato</small>
+                                                <h6>Oggo #100024768173</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mt-4 mx-0 mx-lg-2 text-end">
+                                            <button class="bg-transparent border-0">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 3 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div><img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt=""></div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small>Plato</small>
+                                                <h6>Latiphi #100024768173</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mt-4 mx-0 mx-lg-2 text-end">
+                                            <button class="bg-transparent border-0">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 4 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div><img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt=""></div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small>Plato</small>
+                                                <h6>Platiphac #100024768173</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mt-4 mx-0 mx-lg-2 text-end">
+                                            <button class="bg-transparent border-0">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 5 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div><img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt=""></div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small>Plato</small>
+                                                <h6>Clayory #100024768173</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="mt-4 mx-0 mx-lg-2 text-end">
+                                            <button class="bg-transparent border-0">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <!-- Row 1 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div>
+                                                <img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt="">
+                                            </div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small class="d-block">Cimmy</small>
+                                                <h6 class="d-inline-block">0.83 BUSD</h6>
+                                                <small class="nftstore-lab-light-text">($ 366.86)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="mt-4 mx-0 mx-lg-2 text-end d-flex align-items-center justify-content-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="nftstore-lab-alpha-text">Lead</h6>
+                                                <small class="nftstore-lab-light-text">5 minutes ago</small>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 2 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div>
+                                                <img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt="">
+                                            </div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small class="d-block">TheElerKing</small>
+                                                <h6 class="d-inline-block">0.935 BUSD</h6>
+                                                <small class="nftstore-lab-light-text">($ 349.18)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="mt-4 mx-0 mx-lg-2 text-end d-flex align-items-center justify-content-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="nftstore-lab-danger-text">OutBidded</h6>
+                                                <small class="nftstore-lab-light-text">1 hours ago</small>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 3 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div>
+                                                <img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt="">
+                                            </div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small class="d-block">0xgj32...el21</small>
+                                                <h6 class="d-inline-block">0.85 BUSD</h6>
+                                                <small class="nftstore-lab-light-text">($ 331.52)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="mt-4 mx-0 mx-lg-2 text-end d-flex align-items-center justify-content-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="nftstore-lab-danger-text">OutBidded</h6>
+                                                <small class="nftstore-lab-light-text">4 hours ago</small>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 4 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div>
+                                                <img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt="">
+                                            </div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small class="d-block">TheElerKing</small>
+                                                <h6 class="d-inline-block">0.77 BUSD</h6>
+                                                <small class="nftstore-lab-light-text">($ 318.24)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="mt-4 mx-0 mx-lg-2 text-end d-flex align-items-center justify-content-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="nftstore-lab-danger-text">OutBidded</h6>
+                                                <small class="nftstore-lab-light-text">5 hours ago</small>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 5 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="d-flex align-items-center my-2">
+                                            <div>
+                                                <img class="nftstore-lab-showcase-image"
+                                                    src="./assets/profile-image.png" alt="">
+                                            </div>
+                                            <div class="nftstore-lab-showcase-text">
+                                                <small class="d-block">0xgj32...el21</small>
+                                                <h6 class="d-inline-block">0.7 BUSD</h6>
+                                                <small class="nftstore-lab-light-text">($ 309.44)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div
+                                            class="mt-4 mx-0 mx-lg-2 text-end d-flex align-items-center justify-content-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="nftstore-lab-danger-text">OutBidded</h6>
+                                                <small class="nftstore-lab-light-text">7 hours ago</small>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">
+                                <!-- Row 1 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="my-2">
+                                            <p class="nftstore-lab-light-text">Contract</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="my-2 mx-0 mx-lg-2 text-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="fw-normal">0x85F0...9E2D</h6>
+                                            </div>
+                                            <button class="d-inline-block bg-transparent border-0 align-self-start">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 2 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="my-2">
+                                            <p class="nftstore-lab-light-text">Token Standard</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="my-2 mx-0 mx-lg-2 text-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="fw-normal">ERC-721</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row 3 -->
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="my-2">
+                                            <p class="nftstore-lab-light-text">Blockchain</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="my-2 mx-0 mx-lg-2 text-end">
+                                            <div class="d-inline-block text-end me-2">
+                                                <h6 class="fw-normal">BNB Chain</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab" tabindex="0">disabled</div>
+
+                            <div class="mt-auto">
+                                <p class="nftstore-lab-light-text">You can <span
+                                        class="fw-semibold nftstore-lab-primary-text">Report Any Problem</span> you find
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="my-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="nftstore-lab-activities-header my-4">
+                    <div class="d-inline-block">
+                        <h3>Activities</h3>
+                    </div>
+                    <div class="nftstore-lab-activities-selector d-inline-block float-end">
+                        <select name="" id="">
+                            <option value="">All</option>
+                            <option value="">option1</option>
+                            <option value="">option2</option>
+                            <option value="">option3</option>
+                            <option value="">option4</option>
+                            <option value="">option5</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down nftstore-lab-activities-selector-dropdown-arrow"></i>
+                    </div>
+                </div>
+
+                <div class="nftstore-lab-activities-chart-list">
+
+                    <div class="nftstore-lab-activities-container">
+                        <table class="nftstore-lab-activities-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Items</th>
+                                    <th>Price</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bid & Offer<br><span>Bidded</span></td>
+                                    <td>
+                                        <div class="nftstore-lab-activities-item">
+                                            <div class="nftstore-lab-activities-item-img"></div>
+                                            <div class="nftstore-lab-activities-item-info">
+                                                <span>Plato <img src="./assets/verified.png" alt=""></span>
+                                                <span class="nftstore-lab-activities-item-name">Giraffe</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>0.65 BUSD<br><span>$366.86</span></td>
+                                    <td>Cimmy</td>
+                                    <td>0xhg34...nGj2</td>
+                                    <td>5 minutes ago <i class="fa-solid fa-arrow-up-right"></i></td>
+                                    <td>
+                                        <button class="nftstore-lab-activities-arrow-transform bg-transparent border-0">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <!--Pagination  -->
+                        <nav class="nftstore-lab-pagination mt-4 d-flex justify-content-center" aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <span class="page-link disabled"><i class="fa fa-chevron-left"></i></span>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="/">1</a></li>
+                                <li class="page-item" aria-current="page">
+                                    <span class="page-link">2</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="my-4">
+        <div class="container">
+            <div class="row mt-0 mt-lg-5">
+                <h4 class="my-4">More From Plato</h4>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato <img src="./assets/verified.png"
+                                            alt=""></small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Current Bid</small>
+                                        <div>
+                                            <p class="d-inline-block m-0">0.75 BUSD</p>
+                                            <img class="d-inline-block img-fluid" src="./assets/hammer.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Ends In</small>
+                                        <p class="m-0">01 : 29 : 35</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato <img src="./assets/verified.png"
+                                            alt=""></small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Current Bid</small>
+                                        <div>
+                                            <p class="d-inline-block m-0">0.75 BUSD</p>
+                                            <img class="d-inline-block img-fluid" src="./assets/hammer.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Ends In</small>
+                                        <p class="m-0">01 : 29 : 35</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato <img src="./assets/verified.png"
+                                            alt=""></small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Current Bid</small>
+                                        <div>
+                                            <p class="d-inline-block m-0">0.75 BUSD</p>
+                                            <img class="d-inline-block img-fluid" src="./assets/hammer.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Ends In</small>
+                                        <p class="m-0">01 : 29 : 35</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato <img src="./assets/verified.png"
+                                            alt=""></small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Current Bid</small>
+                                        <div>
+                                            <p class="d-inline-block m-0">0.75 BUSD</p>
+                                            <img class="d-inline-block img-fluid" src="./assets/hammer.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <small class="nftstore-lab-light-text">Ends In</small>
+                                        <p class="m-0">01 : 29 : 35</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nftstore-lab-view-more-btn text-center">
+                    <button>View More</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="my-4">
+        <div class="container">
+            <div class="row mt-0 mt-lg-5">
+                <h4 class="my-4">More From The Seller</h4>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato</small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <small class="nftstore-lab-light-text">Price</small>
+                                <p class="m-0">0.75 BUSD</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato</small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <small class="nftstore-lab-light-text">Price</small>
+                                <p class="m-0">0.75 BUSD</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato</small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <small class="nftstore-lab-light-text">Price</small>
+                                <p class="m-0">0.75 BUSD</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="nftstore-lab-card">
+                        <img src="./assets/image.png" class="img-fluid" alt="">
+                        <div class="nftstore-lab-card-description-box">
+
+                            <div class="nftstore-lab-card-title-head">
+                                <div class="d-inline-block">
+                                    <small class="nftstore-lab-light-text">Plato</small>
+                                </div>
+                                <div class="d-inline-block float-end">
+                                    <img src="./assets/coin.png" alt="">
+                                </div>
+                                <div class="mt-2">
+                                    <h5>Giraffe</h5>
+                                </div>
+                            </div>
+
+                            <div class="nftstore-lab-card-info">
+                                <small class="nftstore-lab-light-text">Price</small>
+                                <p class="m-0">0.75 BUSD</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nftstore-lab-view-more-btn text-center">
+                    <button>View More</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="my-4">
+        <div class="container-fluid g-0">
+            <div class="nftstore-lab-updates">
+                <h1>Get the latest LABS updates</h1>
+                <div class="position-relative">
+                    <input type="text" placeholder="Your Email">
+                    <button><i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Transaction Success Dialoge Box -->
+    <div class="container nftstore-lab-transaction-box">
+        <div class="nftstore-lab-transaction-box-head">
+            <h4>Transaction Success</h4>
+            <small class="nftstore-lab-light-text">You successfully bidded the NFT.</small>
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+        <div class="nftstore-lab-transaction-middle-box">
+            <div class="row">
+                <div class="col-6">
+                    <small class="nftstore-lab-light-text">Status</small>
+                    <p class="mt-2 nftstore-lab-secondary-text fw-semibold">Completed</p>
+                </div>
+                <div class="col-6">
+                    <small class="nftstore-lab-light-text">Transaction ID</small>
+                    <p class="mt-2 fw-semibold">0x184C...ddE66
+                        <button class="nftstore-lab-transaction-middle-box-go-button ms-1">
+                            <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </p>
+                </div>
+                <div class="nftstore-lab-transaction-middle-box-divider"></div>
+                <div class="col-6">
+                    <small class="nftstore-lab-light-text">NFT contract</small>
+                    <p class="mt-2 fw-semibold">Doodle Apes</p>
+                </div>
+                <div class="col-6">
+                    <small class="nftstore-lab-light-text">Token ID</small>
+                    <p class="mt-2 fw-semibold">5</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="nftstore-lab-transaction-box-button">Done</button>
+        </div>
+    </div>
+
+
+    <!-- Bid Dialoge Box -->
+    <div class="nftstore-lab-pop-up-bid-box">
+        <div class="nftstore-lab-pop-up-bid-box-head">
+            <h4>Bid</h4>
+            <button>
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+        <div class="nftstore-lab-pop-up-image-bid-box">
+            <img src="./assets/cyber-image.png" alt="">
+        </div>
+        <div class="nftstore-lab-pop-up-middle-bid-box">
+            <div class="nftstore-lab-bid-info">
+                <small class="nftstore-lab-light-text">Your Balance</small>
+                <p class="fw-semibold">10.2 BUSD</p>
+            </div>
+            <div class="nftstore-lab-bid-info">
+                <small class="nftstore-lab-light-text">The minimum bid price is</small>
+                <p class="fw-semibold">1.1 BUSD</p>
+            </div>
+            <div class="nftstore-lab-pop-up-middle-box-input">
+                <input type="text" placeholder="Place Bid">
+                <div class="nftstore-lab-pop-up-middle-box-input-placeholder">
+                    <img src="./assets/coin.png" alt=""> BUSD
+                </div>
+            </div>
+            <small class="nftstore-lab-light-text mx-2">$ 382.12</small>
+            <div class="mt-4">                
+                <small class="nftstore-lab-light-text mx-2">Once a bid is placed, it cannot be withdraw.</small>
+            </div>
+        </div>
+
+        <button class="nftstore-lab-pop-up-bid-box-button">Bid</button>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="nftstore-lab-footer">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <img src="./assets/logo.png" class="img-fluid" alt="">
+                    <div class="mt-5">
+                        <p>Join LABS community</p>
+                        <a href="/"><img class="img-fluid" src="./assets/twitter.png" alt=""></a>
+                        <a href="/"><img class="img-fluid" src="./assets/telegram.png" alt=""></a>
+                        <a href="/"><img class="img-fluid" src="./assets/youtube.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-4 col-lg-3">
+                    <div class="nftstore-lab-footer-links">
+                        <h6>Marketplace</h6>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">Explore</a></li>
+                            <li><a href="/">Activities</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-4 col-lg-3">
+                    <div class="nftstore-lab-footer-links">
+                        <h6>Links</h6>
+                        <ul>
+                            <li><a href="/">Help Center</a></li>
+                            <li><a href="/">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-4 col-lg-3">
+                    <div class="nftstore-lab-footer-links">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li><a href="/">Privacy Policy</a></li>
+                            <li><a href="/">Terms of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nftstore-lab-bottom-footer">
+                    &copy; LABS, Inc. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
